@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <?php include '../include/head.html'; ?>
+    <title>about 소개 | JOY's portfolio</title>
+    <meta name="description" content="JOY's portfolio" />
+  </head>
+  <body class="sub about">
+    <div id="wrapper">
+      <?php include '../include/header.html'; ?>
+
+      <main id="main">
+        <section id="about-profile">
+          <h2>About</h2>
+          <div class="content-box">
+            <div class="photo">
+              <div class="circle"></div>
+              <!-- <img alt="my photo" src="" /> -->
+            </div>
+            <div class="profile">
+              <div class="box">
+                <p class="name">@@@</p>
+                <p class="text">
+                  안녕하세요.안녕하세요.안녕하세요.안녕하세요.안녕하세요.안녕하세요.안녕하세요.<br/>
+                  안녕하세요.안녕하세요.안녕하세요.안녕하세요.안녕하세요.안녕하세요.안녕하세요.<br/>
+                  안녕하세요.안녕하세요.안녕하세요.안녕하세요.안녕하세요.안녕하세요.안녕하세요.
+                </p>
+              </div>
+            </div>
+            <img alt="" src="" />
+          </div>
+        </section>
+      </main>
+
+      <?php include '../include/footer.html'; ?>
+    </div>
+
+<script>
+'use strict';
+var h2Timer = setTimeout(function() { addClass(document.querySelector('#about-profile h2'), 'on'); }, 400);
+var photoTimer = setTimeout(function() { addClass(document.querySelector('#about-profile div.photo'), 'on'); }, 800);
+var profileTimer = setTimeout(function() { addClass(document.querySelector('#about-profile div.profile'), 'on'); }, 1200);
+
+
+</script>
+
+  </body>
+</html>
+
+

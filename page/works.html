@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <?php include '../include/head.html'; ?>
+    <title>works 작업물 | JOY's portfolio</title>
+    <meta name="description" content="JOY's portfolio" />
+  </head>
+  <body class="sub works">
+    <div id="wrapper">
+      <?php include '../include/header.html'; ?>
+
+      <main id="main">
+        <h2>works</h2>
+        <section id="works">
+          <section class="page right">
+            <div class="photo-box">
+              <p class="photo"><img alt="Starbucks clone" src="../img/works-acebed.png" /></p>
+            </div>
+            <div class="content">
+              <div class="box">
+                <ul class="tags">
+                  <li><span>#반응형</span></li>
+                  <li><span>#클론코딩</span></li>
+                </ul>
+                <p class="title">Starbucks</p>
+                <p class="text">
+                  Starbuks Korea 페이지를 <br />
+                  접근성을 고려하여 클론코딩하였습니다. <br />
+                  접근성을 고려하여 클론코딩하였습니다. <br />
+                  접근성을 고려하여 클론코딩하였습니다.
+                </p>
+                <ul class="skills">
+                  <li><span>HTML</span></li>
+                  <li><span>CSS</span></li>
+                  <li><span>Java Script</span></li>
+                  <li><span>Jquery</span></li>
+                </ul>
+                <ul class="btn-group type-2">
+                  <li><a hre="#"><span>Github</span></a></li>
+                  <li><a hre="#"><span>View</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="page left">
+            <div class="content">
+              <div class="box">
+                <ul class="tags">
+                  <li><span>#반응형</span></li>
+                  <li><span>#클론코딩</span></li>
+                </ul>
+                <p class="title">KIA</p>
+                <p class="text">
+                  KIA 페이지를 <br />
+                  접근성을 고려하여 클론코딩하였습니다.
+                </p>
+                <ul class="skills">
+                  <li><span>HTML</span></li>
+                  <li><span>CSS</span></li>
+                  <li><span>Java Script</span></li>
+                  <li><span>Jquery</span></li>
+                </ul>
+                <ul class="btn-group type-2">
+                  <li><a hre="#"><span>Github</span></a></li>
+                  <li><a hre="#"><span>View</span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="photo-box">
+              <p class="photo"><img alt="KIA clone" src="../img/works-lifeplus.jpg" /></p>
+            </div>
+          </section>
+          <section class="page right">
+            <div class="photo-box">
+              <p class="photo"><img alt="Starbucks clone" src="../img/temp.jpg" /></p>
+            </div>
+            <div class="content">
+              <div class="box">
+                <ul class="tags">
+                  <li><span>#반응형</span></li>
+                  <li><span>#클론코딩</span></li>
+                </ul>
+                <p class="title">Starbucks</p>
+                <p class="text">
+                  Starbuks Korea 페이지를 <br />
+                  접근성을 고려하여 클론코딩하였습니다. <br />
+                  접근성을 고려하여 클론코딩하였습니다. <br />
+                  접근성을 고려하여 클론코딩하였습니다.
+                </p>
+                <ul class="skills">
+                  <li><span>HTML</span></li>
+                  <li><span>CSS</span></li>
+                  <li><span>Java Script</span></li>
+                  <li><span>Jquery</span></li>
+                </ul>
+                <ul class="btn-group type-2">
+                  <li><a hre="#"><span>Github</span></a></li>
+                  <li><a hre="#"><span>View</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="page left">
+            <div class="content">
+              <div class="box">
+                <ul class="tags">
+                  <li><span>#반응형</span></li>
+                  <li><span>#클론코딩</span></li>
+                </ul>
+                <p class="title">KIA</p>
+                <p class="text">
+                  KIA 페이지를 <br />
+                  접근성을 고려하여 클론코딩하였습니다.
+                </p>
+                <ul class="skills">
+                  <li><span>HTML</span></li>
+                  <li><span>CSS</span></li>
+                  <li><span>Java Script</span></li>
+                  <li><span>Jquery</span></li>
+                </ul>
+                <ul class="btn-group type-2">
+                  <li><a hre="#"><span>Github</span></a></li>
+                  <li><a hre="#"><span>View</span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="photo-box">
+              <p class="photo"></p>
+              <img alt="KIA clone" src="../img/temp.jpg" />
+            </div>
+          </section>
+        </section>
+        
+        <aside id="aside">
+          <!-- <p class="cur">1</p>
+          <div class="bar"><span></span></div>
+          <p class="total"></p> -->
+          <ul class="tab">
+            <li class="on"><a href="#">에이스 침대<span>1</span></a></li>
+            <li><a href="#">LifePlus<span>2</span></a></li>
+            <li><a href="#">관리자<span>3</span></a></li>
+          </ul>
+        </aside>
+      </main>
+
+      <!-- <?php include '../include/footer.html'; ?> -->
+    </div>
+
+<script>
+'use strict';
+setScroll();
+
+// function setScroll() {
+//   var totalPage = document.querySelectorAll('section.page').length;
+//   var numPage = document.querySelectorAll('section.page').length;
+//   var pageNow = 0;
+//   var pagePrev = 0;
+//   var pageNext = 0;
+//   var isBlocked = false;
+//   var timerId = '';
+//   document.querySelector('#aside p.total').innerText = totalPage;
+//   showPage(1);
+//   checkVisibility('section.page');
+  
+//   document.querySelectorAll('section.page').forEach(function (el, i) {
+//     el.addEventListener('focusin', function(e) {
+//       var index = Array.from($selector.querySelectorAll('section.page')).indexOf(this);
+//       alert(index);
+//       showSlide(index + 1);
+//     });
+//   });
+//   window.addEventListener('scroll', function(e) {
+//     checkVisibility('section.page');
+//   });
+//   window.addEventListener('wheel', function(e) {
+//     e.preventDefault();
+//     //wheel 이벤트가 들어오면 취소하고 0.2초동안 이벤트 발생 -> 딜레이됨
+//     clearTimeout(timerId);
+//     timerId = setTimeout(function() {isBlocked = false;}, 100);
+//     if (isBlocked === true) return false;
+//     isBlocked = true;
+//     var delta = e.deltaY;
+//     if (delta > 0) {
+//       showPage(pageNext);
+//     } else {
+//       showPage(pagePrev);
+//     }
+//   }, {passive: false});
+    
+//   function showPage(n) {
+//     var scrollAmt = document.querySelectorAll('section.page')[n - 1].offsetTop;
+//     // $('html').stop(true).animate({'scrollTop': scrollAmt}, 500);
+//     document.querySelector('html').scrollTop = scrollAmt;
+//     // $('#page-indicator > li').removeClass('on');
+//     // $('#page-indicator > li:eq(' + (n - 1) + ')').addClass('on');
+//     document.querySelector('#aside div.bar span').style.top = ((n - 1) * 25) + '%';
+//     document.querySelector('#aside p.cur').innerText = (n);
+//     document.querySelector('#aside').style.top = ((window.innerHeight)/2 + scrollAmt) + 'px';
+//     pageNow = n;
+//     pagePrev = (n <= 1) ? 1 : (n - 1);
+//     pageNext = (n >= numPage) ? numPage : (n + 1);
+//   }
+  
+//   function checkVisibility(selector) {
+//     document.querySelectorAll(selector).forEach(function (el, i) {
+//       var scrollTop = document.querySelector('html').scrollTop;
+//       // var min = el.offsetTop - window.innerHeight;
+//       // var max = el.offsetTop + el.clientHeight;
+//       var min = el.offsetTop - (window.innerHeight / 3);
+//       var max = el.offsetTop + el.clientHeight - (window.innerHeight / 3);
+//       console.log(min + ' ~ ' + max + ' : ' + scrollTop);
+//       if (scrollTop <= min) {
+//         removeClass(el, 'on');
+//         removeClass(el, 'up');
+//         addClass(el, 'down');
+//       } else if (scrollTop >= max) {
+//         removeClass(el, 'on');
+//         removeClass(el, 'down');
+//         addClass(el, 'up');
+//       } else {
+//         removeClass(el, 'up');
+//         removeClass(el, 'down');
+//         if (hasClass(el, 'on') === false) {
+//           addClass(el, 'on');
+//         }
+//         // var scale = (((scrollTop - min) * 4) / (max - min)) + 1;  // scale 1 ~ 5사이 반영
+//         // el.next().css({'transform': 'scale(' + scale + ')'});
+//       }
+//     });
+//   }
+// }
+
+function setScroll() {
+  var totalPage = document.querySelectorAll('section.page').length;
+  var pageNow = 0;
+  var pagePrev = 0;
+  var pageNext = 0;
+  var isBlocked = false;
+  var timerId = '';
+  // document.querySelector('#aside p.total').innerText = totalPage;
+  showPage(1);
+  checkScroll();
+  
+  document.querySelectorAll('#aside > ul.tab > li > a').forEach(function (el, i) {
+    el.addEventListener('click', function(e) {
+      showPage(getIndex('#aside ul.tab > li', this.parentElement));
+    });
+    el.addEventListener('focusin', function(e) {
+      showPage(getIndex('#aside ul.tab > li', this.parentElement));
+    });
+  });
+  // document.querySelectorAll('section.page').forEach(function (el, i) {
+  //   el.addEventListener('focusin', function(e) {
+  //     showPage(getIndex('section.page', this));
+  //   });
+  // });
+  window.addEventListener('scroll', function(e) {
+    checkScroll();
+  });
+  window.addEventListener('wheel', function(e) {
+    e.preventDefault();
+    //wheel 이벤트가 들어오면 취소하고 0.2초동안 이벤트 발생 -> 딜레이됨
+    clearTimeout(timerId);
+    timerId = setTimeout(function() {isBlocked = false;}, 100);
+    if (isBlocked === true) return false;
+    isBlocked = true;
+    var delta = e.deltaY;
+    if (delta > 0) {
+      showPage(pageNext);
+    } else {
+      showPage(pagePrev);
+    }
+  }, {passive: false});
+  // main
+  function checkScroll(){
+    var scrollAmt = document.documentElement.scrollTop;
+    var windowHeight = window.innerHeight;
+    var curPage = 0;
+    var n = 0;
+  
+    removeClass(document.querySelectorAll('section.page'), 'on');
+    document.querySelectorAll('section.page').forEach(function (el, i) {
+      var min = el.offsetTop - (window.innerHeight / 2);
+      var max = el.offsetTop + el.clientHeight - (window.innerHeight / 2);
+      // sections[i] = el;
+      // sectionsTop[i] = el.offsetTop;
+      if (scrollAmt >= min && scrollAmt < max) {
+        n = i + 1;
+        addClass(el, 'on');
+        // document.querySelector('#aside div.bar span').style.top = (i * 25) + '%';
+        // document.querySelector('#aside p.cur').innerText = (i + 1);
+  
+        return false;
+      }
+    });
+    pageNow = n;
+    pagePrev = (n <= 1) ? 1 : (n - 1);
+    pageNext = (n >= totalPage) ? totalPage : (n + 1);
+    // document.querySelector('#aside').style.top = ((windowHeight)/2 + scrollAmt) + 'px';
+  }
+  function showPage(n) {
+    if(n === totalPage) return;
+    var scrollAmt = document.querySelectorAll('section.page')[n - 1].offsetTop - 100;
+    scrollAmt = (n === totalPage) ? scrollAmt + 100 : scrollAmt;
+    // document.querySelector('html').stop(true).animate({'scrollTop': scrollAmt}, 500, function() {
+    //   isBlocked = false;
+    // });
+    removeClass(document.querySelectorAll('#aside > ul.tab > li'), 'on');
+    addClass(document.querySelectorAll('#aside > ul.tab > li')[n - 1], 'on');
+    document.querySelector('html').scrollTop = scrollAmt;
+    isBlocked = false;
+  }
+  function getIndex(arrEl, selectEl) {
+    var $arrEl = Array.from(document.querySelectorAll(arrEl));
+    var $selectEl = selectEl;
+    var index = $arrEl.indexOf($selectEl);
+    return index + 1;
+  }
+}
+
+</script>
+
+  </body>
+</html>
+
+

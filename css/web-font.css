@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'SeoulHangang';
+  font-style: normal;
+  font-weight: 300;
+  src: local('※'),
+      url('../font/SeoulHangangL.woff2') format('woff2'),
+      url('../font/SeoulHangangL.woff') format('woff'),
+      url('../font/SeoulHangangL.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'SeoulHangang';
+  font-style: normal;
+  font-weight: 400;
+  src: local('※'),
+      url('../font/SeoulHangangM.woff2') format('woff2'),
+      url('../font/SeoulHangangM.woff') format('woff'),
+      url('../font/SeoulHangangM.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'SeoulHangang';
+  font-style: normal;
+  font-weight: 700;
+  src: local('※'),
+      url('../font/SeoulHangangB.woff2') format('woff2'),
+      url('../font/SeoulHangangB.woff') format('woff'),
+      url('../font/SeoulHangangB.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'SeoulHangang';
+  font-style: normal;
+  font-weight: 800;
+  src: local('※'),
+      url('../font/SeoulHangangEB.woff2') format('woff2'),
+      url('../font/SeoulHangangEB.woff') format('woff'),
+      url('../font/SeoulHangangEB.otf') format('opentype');
+}
+

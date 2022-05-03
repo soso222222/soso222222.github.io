@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <?php include '../include/head.html'; ?>
+    <title>contact 문의 | JOY's portfolio</title>
+    <meta name="description" content="JOY's portfolio" />
+  </head>
+  <body class="sub contact">
+    <div id="wrapper">
+      <?php include '../include/header.html'; ?>
+
+      <main id="main">
+        <section id="contact-email">
+          <div class="content-box">
+            <h2>Contact</h2>
+            <p class="email">1254@gmail.com</p>
+            <p class="text">문의사항은 이 쪽으로 연락 부탁드립니다.</p>
+          </div>
+        </section>
+      </main>
+
+      <?php include '../include/footer.html'; ?>
+    </div>
+
+<script>
+'use strict';
+var h2Timer = setTimeout(function() { addClass(document.querySelector('#contact-email h2'), 'on'); }, 400);
+var emailTimer = setTimeout(function() { addClass(document.querySelector('#contact-email p.email'), 'on'); }, 800);
+var textTimer = setTimeout(function() { addClass(document.querySelector('#contact-email p.text'), 'on'); }, 1200);
+
+</script>
+
+  </body>
+</html>
+
+
