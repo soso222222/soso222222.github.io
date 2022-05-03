@@ -2,6 +2,7 @@
 document.addEventListener("DOMContentLoaded", function(){
 // document.addEventListener("load", function(){
     preventDefaultAnchor();
+    setMobileMenu();
 });
 
 
@@ -10,6 +11,23 @@ function preventDefaultAnchor() {
     el.addEventListener('click', function(e) {
         e.preventDefault();
     });
+  });
+}
+function setMobileMenu() {
+  var openClassName = 'fa-solid fa-bars';
+  var closeClassName = 'fa-solid fa-x';
+  var isOpen = false;
+
+  document.querySelector('.mobile-menu > a').addEventListener('click', function(e) {
+    if (isOpen === true) {
+      removeClass(document.querySelector('#header div.top'), 'show');
+      this.querySelector('i').setAttribute('class', openClassName);
+      isOpen = false;
+    } else {
+      addClass(document.querySelector('#header div.top'), 'show');
+      this.querySelector('i').setAttribute('class', closeClassName);
+      isOpen = true;
+    }
   });
 }
 
