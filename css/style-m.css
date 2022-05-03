@@ -40,7 +40,7 @@ body {font-family: 'SeoulHangang', 'Apple SD Gothic Neo', '맑은 고딕', Malgu
 #gnb ul > li span.en {font-size: 18px;}
 #gnb ul > li span.kr {font-size: 24px;}
 #gnb ul > li span.kr::before {content: ''; position: absolute; left: 40%; bottom: 0; width: 0; height: 50%; background: rgba(205, 180, 219, 0.3);}
-#gnb ul > li a:hover span.kr::before {width: 20%; transition: all 0.4s ease-out;}
+/* #gnb ul > li a:hover span.kr::before {width: 20%; transition: all 0.4s ease-out;} */
 
 /* footer */
 #footer {position: relative; height: 60px;}
@@ -59,7 +59,7 @@ body {font-family: 'SeoulHangang', 'Apple SD Gothic Neo', '맑은 고딕', Malgu
 /* sub */
 #about-profile {position: relative;}
 #about-profile h2 {font-size: 30px; text-align: center; padding: 6% 0 4% 0;}
-#about-profile .content-box {position: relative; width: calc(100% - 200px); height: 70%; overflow: hidden; margin: 0 auto;}
+#about-profile .content-box {position: relative; width: calc(100% - 40px); height: 70%; overflow: hidden; margin: 0 auto;}
 #about-profile div.photo {width: 100%; height: 100%;}
 #about-profile div.circle {width: 250px; height: 250px; border-radius: 50%; background-color: #666666; margin: 0 auto;}
 #about-profile div.profile {position: relative; width: 100%; height: 100%; text-align: center; margin-top: 10%;}
@@ -83,17 +83,17 @@ body {font-family: 'SeoulHangang', 'Apple SD Gothic Neo', '맑은 고딕', Malgu
 
 body.works h2 {position: fixed; width: 90%; background-color: #fff; margin-left: 10%; z-index: 100;}
 body.works h2::after {content: ''; position: absolute; top: 50%; right: 20%; width: 60%; height: 1px; border-top: 1px solid #000000;}
-#works {position: relative; top: 0; width: calc(100% - 200px); overflow: hidden; padding-top: 50px; margin: 0 auto;}
-#works > section.page {position: relative; top: 0; overflow: hidden;}
+#works {position: relative; top: 0; width: calc(100% - 30px); overflow: hidden; padding-top: 30px; margin: 0 auto;}
+#works > section.page {position: relative; top: 0; height: calc(100vh - 200px); overflow: hidden;}
 #works > section > div.photo-box {width: 100%; height: 50%; text-align: center;}
 #works > section > div.photo-box > p.photo {display: inline-block; height: 100%; box-sizing: border-box;}
 /* #works > section > div.photo-box img {height: 100%; margin: 0 auto;} */
 #works > section > div.content {height: 50%;}
 #works > section > div.content > div.box {position: relative; display: inline-block; width: 100%;}
-#works .right > div.photo-box { margin-bottom: 30px;}
-#works .left > div.photo-box {}
-#works .right > div.content {}
-#works .left > div.content { margin-bottom: 30px;}
+#works .right > div.photo-box { margin-bottom: 10px;}
+#works .left > div.photo-box { margin-bottom: 5px;}
+#works .right > div.content { margin-bottom: 5px;}
+#works .left > div.content { margin-bottom: 10px;}
 #works div.photo-box {transform: translateY(30%); opacity: 0; transition: all 1.2s;}
 #works div.content {transform: translateY(-30%); opacity: 0; transition: all 1.2s;}
 #works .on > div.photo-box,
