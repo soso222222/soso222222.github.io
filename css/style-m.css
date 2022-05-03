@@ -116,8 +116,8 @@ body.works h2::after {content: ''; position: absolute; top: 50%; right: 20%; wid
 
 #contact-email {position: relative;}
 #contact-email h2 {text-align: left;}
-#contact-email > div.content-box {position: relative; display: inline-block; width: 60%; top: 50%; left: 50%; transform: translate(-50%, 50%);}
-#contact-email p.email {position: relative; font-size: 36px; border-bottom: 1px solid #000000; padding: 1em; margin-top: 5%; text-align: center;}
+#contact-email > div.content-box {position: relative; display: inline-block; width: 90%; top: 50%; left: 50%; transform: translate(-50%, 50%);}
+#contact-email p.email {position: relative; font-size: 30px; border-bottom: 1px solid #000000; padding: 1em; margin-top: 5%; text-align: center;}
 #contact-email p.email::before {content: ''; position: absolute; right: 0; top: 50%; width: 70%; height: 50%; background: rgba(255, 200, 221, 0.3); transform: translate(0, -50%); z-index: -1;}
 #contact-email p.text {font-size: 18px; font-weight: 300; color: #666666; text-align: left; padding-top: 2em;}
 
