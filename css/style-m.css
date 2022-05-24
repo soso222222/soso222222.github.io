@@ -94,7 +94,7 @@ body.works h2::after {content: ''; position: absolute; top: 50%; right: 20%; wid
 #works .left > div.photo-box {height: 60%; margin-bottom: 5px;}
 #works .right > div.content {height: 60%; margin-bottom: 5px;}
 #works .left > div.content {height: 40%; margin-bottom: 20px;}
-#works div.photo-box {transform: translateY(30%); opacity: 0; transition: all 1.2s;}
+#works div.photo-box,
 #works div.content {transform: translateY(30%); opacity: 0; transition: all 1.2s;}
 #works .on > div.photo-box,
 #works .on > div.content {transform: translateY(0); opacity: 1;}

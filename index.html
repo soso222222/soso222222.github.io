@@ -62,7 +62,7 @@
           <div class="bg">
             <div class="text">
               <p>안녕하세요</p><br />
-              <p>프론트엔드개발자 @@@입니다.</p>
+              <p>프론트엔드개발자 이조은입니다.</p>
             </div>
           </div>
         </section>
@@ -77,6 +77,9 @@
 
 <script>
 'use strict';
+var bgTimer = setTimeout(function() { addClass(document.querySelector('#main-visual div.bg'), 'on'); }, 200);
+var text1Timer = setTimeout(function() { addClass(document.querySelector('#main-visual div.text p:first-child'), 'on'); }, 400);
+var text2Timer = setTimeout(function() { addClass(document.querySelector('#main-visual div.text p:last-child'), 'on'); }, 900);
 
 
 

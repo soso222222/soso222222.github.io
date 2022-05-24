@@ -79,9 +79,12 @@ body {font-family: 'SeoulHangang', 'Apple SD Gothic Neo', '맑은 고딕', Malgu
 /* main */
 #main {position: relative; min-height: calc(100vh - 170px); margin-top: 110px;}
 #main-visual {position: relative;}
-#main-visual div.bg {position: relative; height: calc(100vh - 170px); background: url(../img/bg.jpg) center center no-repeat; background-size: cover;}
+#main-visual div.bg {position: relative; height: calc(100vh - 170px); background: url(../img/bg.jpg) center center no-repeat; background-size: cover; opacity: 0; transition: opacity 1.8s;}
 #main-visual div.text {position: absolute; top: 32%; left: -2%;}
-#main-visual div.text p {position: relative; display: inline-block; margin-top: 0.8em; font-size: 24px; background: #fff;}
+#main-visual div.text p {position: relative; display: inline-block; width: 0px; height: 28px; overflow: hidden; margin-top: 0.8em; font-size: 24px; background: #fff;}
+#main-visual div.bg.on {opacity: 1;}
+#main-visual div.text p.on:first-child {width: 120px; transition: width 0.8s;}
+#main-visual div.text p.on:last-child {width: 320px; transition: width 1.8s;}
 
 
 /* sub */
@@ -94,7 +97,7 @@ body {font-family: 'SeoulHangang', 'Apple SD Gothic Neo', '맑은 고딕', Malgu
 #about-profile div.profile div.box {position: relative; display: inline-block; top: 10%;}
 #about-profile div.profile p {text-align: center;}
 #about-profile div.profile p.name {font-size: 18px; font-weight: 800; letter-spacing: 0.5em; padding-bottom: 8%;}
-#about-profile div.profile p.text {position: relative; padding-top: 8%; color: #666666;}
+#about-profile div.profile p.text {position: relative; line-height: 1.5em; padding-top: 8%; color: #666666;}
 #about-profile div.profile p.text::before {content: ''; position: absolute; top: 0; left: -10%; width: 120%; height: 1px; border-bottom: 1px solid #000;}
 
 #about-profile h2,
@@ -116,8 +119,8 @@ body.works h2::after {content: ''; position: absolute; top: 50%; right: 20%; wid
 #works > section > div.content {position: relative; width: 50%; height: 100%; text-align: center;}
 #works > section > div.content > div.box {position: relative; display: inline-block; top: 50%; width: 60%; transform: translate(0, -50%);}
 #works .right > div.photo-box {float: left; transform: translateY(30%); opacity: 0; transition: all 1.2s;}
-#works .left > div.photo-box {float: right; transform: translateY(-30%); opacity: 0; transition: all 1.2s;}
-#works .right > div.content {float: right; transform: translateY(-30%); opacity: 0; transition: all 1.2s;}
+#works .left > div.photo-box {float: right; transform: translateY(30%); opacity: 0; transition: all 1.2s;}
+#works .right > div.content {float: right; transform: translateY(30%); opacity: 0; transition: all 1.2s;}
 #works .left > div.content {float: left; transform: translateY(30%); opacity: 0; transition: all 1.2s;}
 #works .on > div.photo-box,
 #works .on > div.content {transform: translateY(0); opacity: 1;}
