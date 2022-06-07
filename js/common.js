@@ -43,13 +43,16 @@ function addClass(element, className) {
   
     function addSingleClass(el, className) {
       var oldClassName = el.getAttribute('class');
+      var oldClassNameArray = (oldClassName === null) ? oldClassName : oldClassName.split(' ');
       var result = '';
       
       if (oldClassName === null || oldClassName === '') {
         //클래스 자체가 없을 경우
         if (className === '') return false;
         else result = className;
-      } else if (oldClassName.indexOf(className) > -1 || className.trim() == '') {
+      } else if (oldClassNameArray.indexOf(className) > -1 || className.trim() == '') {
+        //기존 클래스가 있거나
+        //새 클래스명이 없을 경우
         return false;
       } else if (oldClassName != undefined) {
         if (className.trim() != '') {

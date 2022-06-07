@@ -10,12 +10,11 @@
     <link rel="stylesheet" href="/css/web-font.css" />
     <link rel="stylesheet" href="/css/style-pc.css" media="screen and (min-width: 1024.0px)" />
     <link rel="stylesheet" href="/css/style-m.css" media="screen and (max-width: 1023.9px)" />
-    <script src="/js/jquery-3.6.0.min.js"></script>
     <script src="/js/common.js"></script>
-    <title>contact 문의 | JOY's portfolio</title>
+    <title>skills 보유 기술 | JOY's portfolio</title>
     <meta name="description" content="JOY's portfolio" />
   </head>
-  <body class="sub contact">
+  <body class="sub skills">
     <div id="wrapper">
       <a href="#main" id="skip-nav">본문 바로가기</a>
       <header id="header">
@@ -58,11 +57,62 @@
       </header>
 
       <main id="main">
-        <section id="contact-email">
+        <section id="skill">
+          <h2>Skills</h2>
           <div class="content-box">
-            <h2>Contact</h2>
-            <p class="email">sortof259@gmail.com</p>
-            <p class="text">문의사항은 이 쪽으로 연락 부탁드립니다.</p>
+
+            <section class="container type-1">
+              <section>
+                <h3>Frontend</h3>
+                <ul class="skills light-purple">
+                  <li><span>Html</span></li>
+                  <li><span>JavaScript</span></li>
+                  <li><span>CSS</span></li>
+                  <li><span>jQuery</span></li>
+                  <li><span>Figma</span></li>
+                </ul>
+              </section>
+            </section>
+            <section class="container type-1">
+              <section>
+                <h3>Backend</h3>
+                <ul class="skills light-purple">
+                  <li><span>java</span></li>
+                  <li><span>C#</span></li>
+                  <li><span>jsp</span></li>
+                  <li><span>asp.net</span></li>
+                  <li><span>MS SQL</span></li>
+                  <li><span>My SQL</span></li>
+                </ul>
+              </section>
+            </section>
+            <section class="container type-1">
+              <section>
+                <h3>Design</h3>
+                <ul class="skills light-purple">
+                  <li><span>Photoshop</span></li>
+                  <li><span>Illustrator</span></li>
+                </ul>
+              </section>
+            </section>
+            <section class="container type-1">
+              <section>
+                <h3>Version Control</h3>
+                <ul class="skills light-purple">
+                  <li><span>git</span></li>
+                </ul>
+              </section>
+            </section>
+            <section class="container type-1">
+              <section>
+                <h3>Certificate</h3>
+                <ul class="skills light-purple">
+                  <li><span>정보처리기사</span></li>
+                  <li><span>GTQ 1급</span></li>
+                </ul>
+              </section>
+            </section>
+
           </div>
         </section>
       </main>
@@ -76,9 +126,8 @@
 
 <script>
 'use strict';
-var h2Timer = setTimeout(function() { addClass(document.querySelector('#contact-email h2'), 'on'); }, 400);
-var emailTimer = setTimeout(function() { addClass(document.querySelector('#contact-email p.email'), 'on'); }, 800);
-var textTimer = setTimeout(function() { addClass(document.querySelector('#contact-email p.text'), 'on'); }, 1200);
+var h2Timer = setTimeout(function() { addClass(document.querySelector('#skill h2'), 'on'); }, 400);
+var boxTimer = setTimeout(function() { addClass(document.querySelector('#skill > div'), 'on'); }, 800);
 
 </script>
 
