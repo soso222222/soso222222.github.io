@@ -29,7 +29,7 @@ br.only-pc::after {content: '\00a0';}
 body {font-family: 'SeoulHangang', 'Apple SD Gothic Neo', '맑은 고딕', Malgun Gothic, '돋움', Dotum, Helvetica, AppleGothic, sans-serif; font-size: 14px; color: #333333; background: #ffffff;}
 
 /* header */
-#header {position: fixed; left: 0; top: 0; width: 100%; height: 110px; z-index: 10000; background-color: #fff;}
+#header {position: fixed; left: 0; top: 0; width: 100%; height: 80px; z-index: 10000; background-color: #fff;}
 #header div.top {position: relative; width: 90%; margin: 1% auto;}
 #header div.top.show #gnb {height: 100%;}
 #header h1 {font-size: 64px; font-weight: 800; letter-spacing: 0.4em}
@@ -38,7 +38,7 @@ body {font-family: 'SeoulHangang', 'Apple SD Gothic Neo', '맑은 고딕', Malgu
 .mobile-menu {position: absolute; top: 0; right: 0; z-index: 1;}
 .mobile-menu > a {display: inline-block; font-size: 50px;}
 
-#gnb {position: fixed; width: 100%; height: 0; top: 110px; right: 0; z-index: 5000; background-color: rgba(255, 255, 255, 0.9); transition: height 0.8s; overflow: hidden;}
+#gnb {position: fixed; width: 100%; height: 0; top: 80px; right: 0; z-index: 5000; background-color: rgba(255, 255, 255, 0.9); padding-top: 20px; transition: height 0.8s; overflow: hidden;}
 #gnb ul {overflow: hidden;}
 #gnb ul > li {position: relative; box-sizing: border-box; margin-bottom: 2em;}
 #gnb ul > li a {position: relative; display: block;}
@@ -54,7 +54,7 @@ body {font-family: 'SeoulHangang', 'Apple SD Gothic Neo', '맑은 고딕', Malgu
 #footer p {text-align: center; font-size: 14px; font-weight: 700;}
 
 /* main */
-#main {position: relative; min-height: calc(100vh - 260px); margin-top: 110px;}
+#main {position: relative; min-height: calc(100vh - 260px); margin-top: 80px;}
 #main-visual {position: relative;}
 #main-visual div.bg {position: relative; height: calc(100vh - 170px); background: url(../img/bg.jpg) center center no-repeat; background-size: cover; opacity: 0; transition: opacity 1.8s;}
 #main-visual div.text {position: absolute; top: 32%; left: 2%;}
@@ -91,7 +91,7 @@ body {font-family: 'SeoulHangang', 'Apple SD Gothic Neo', '맑은 고딕', Malgu
 
 body.works h2 {position: fixed; width: 90%; background-color: #fff; margin-left: 10%; z-index: 100;}
 body.works h2::after {content: ''; position: absolute; top: 50%; right: 20%; width: 60%; height: 1px; border-top: 1px solid #000000;}
-#works {position: relative; top: 0; width: calc(100% - 30px); overflow: hidden; padding-top: 30px; margin: 0 auto;}
+#works {position: relative; top: 0; width: calc(100% - 100px); overflow: hidden; padding-top: 30px; margin: 0 auto;}
 #works > section.page {position: relative; top: 0; height: calc(100vh - 200px); overflow: hidden;}
 #works > section.page:first-child {margin-top: 20px;}
 #works > section > div.photo-box {width: 100%; overflow: hidden; text-align: center;}
@@ -118,9 +118,9 @@ body.works h2::after {content: ''; position: absolute; top: 50%; right: 20%; wid
 
 
 #skill {width: calc(100% - 20px); margin: 0 auto;}
-#skill h2 {position: fixed; top: 110px; width: 80%; text-align: right; background-color: #fff; padding: 20px 0; z-index: 100;}
+#skill h2 {position: fixed; top: 80px; width: 80%; text-align: right; background-color: #fff; padding: 20px 0; z-index: 100;}
 #skill h2::after {content: ''; position: absolute; top: 50%; left: 20%; width: 70%; height: 1px; border-top: 1px solid #000000;}
-#skill .content-box {position: relative; width: calc(100% - 200px); padding: 110px 0 30px 0; margin: 0 auto;}
+#skill .content-box {position: relative; width: calc(100% - 200px); padding: 80px 0 30px 0; margin: 0 auto;}
 
 #skill h2,
 #skill .content-box {opacity: 0; transform: translateY(30%); transition: all 0.8s;}
