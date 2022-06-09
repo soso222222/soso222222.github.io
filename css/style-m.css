@@ -38,8 +38,8 @@ body {font-family: 'SeoulHangang', 'Apple SD Gothic Neo', '맑은 고딕', Malgu
 .mobile-menu {position: absolute; top: 0; right: 0; z-index: 1;}
 .mobile-menu > a {display: inline-block; font-size: 50px;}
 
-#gnb {position: fixed; width: 100%; height: 0; top: 80px; right: 0; z-index: 5000; background-color: rgba(255, 255, 255, 0.9); padding-top: 20px; transition: height 0.8s; overflow: hidden;}
-#gnb ul {overflow: hidden;}
+#gnb {position: fixed; width: 100%; height: 0; top: 80px; right: 0; z-index: 5000; background-color: rgba(255, 255, 255, 0.9); transition: height 0.8s; overflow: hidden;}
+#gnb ul {padding-top: 20px; overflow: hidden;}
 #gnb ul > li {position: relative; box-sizing: border-box; margin-bottom: 2em;}
 #gnb ul > li a {position: relative; display: block;}
 #gnb ul > li span {display: block; text-align: center;}
@@ -92,17 +92,17 @@ body {font-family: 'SeoulHangang', 'Apple SD Gothic Neo', '맑은 고딕', Malgu
 body.works h2 {position: fixed; width: 90%; background-color: #fff; margin-left: 10%; z-index: 100;}
 body.works h2::after {content: ''; position: absolute; top: 50%; right: 20%; width: 60%; height: 1px; border-top: 1px solid #000000;}
 #works {position: relative; top: 0; width: calc(100% - 100px); overflow: hidden; padding-top: 30px; margin: 0 auto;}
-#works > section.page {position: relative; top: 0; height: calc(100vh - 200px); overflow: hidden;}
+#works > section.page {position: relative; top: 0; height: calc(100vh - 200px); padding: 50px 0; overflow: hidden;}
 #works > section.page:first-child {margin-top: 20px;}
 #works > section > div.photo-box {width: 100%; overflow: hidden; text-align: center;}
 #works > section > div.photo-box > p.photo {display: inline-block; height: 100%; box-sizing: border-box;}
 /* #works > section > div.photo-box img {height: 100%; margin: 0 auto;} */
 #works > section > div.content {}
 #works > section > div.content > div.box {position: relative; display: inline-block; width: 100%;}
-#works .right > div.photo-box {height: 40%; margin-bottom: 20px;}
-#works .left > div.photo-box {height: 60%; margin-bottom: 5px;}
-#works .right > div.content {height: 60%; margin-bottom: 5px;}
-#works .left > div.content {height: 40%; margin-bottom: 20px;}
+#works .right > div.photo-box {margin-bottom: 50px;}
+#works .left > div.photo-box {margin-bottom: 10px;}
+#works .right > div.content {margin-bottom: 10px;}
+#works .left > div.content {margin-bottom: 50px;}
 #works div.photo-box,
 #works div.content {transform: translateY(30%); opacity: 0; transition: all 1.2s;}
 #works .on > div.photo-box,
