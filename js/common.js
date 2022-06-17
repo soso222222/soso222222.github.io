@@ -33,9 +33,21 @@ function setMobileMenu() {
 
 // common
 function addClass(element, className) {
-    if (element != undefined && element.length > 1) {
+  var classNameArray = (className === null) ? [className] : className.split(' ');
+
+    if (element != undefined && element.length > 1) { //element가 여러개
       element.forEach(function (element, i) {
-        addSingleClass(element, className);
+        if(classNameArray.length > 1) { //class가 여러개
+          classNameArray.forEach(function (singleClassName, i) {
+            addSingleClass(element, singleClassName);
+          });
+        } else {
+          addSingleClass(element, className);
+        }
+      });
+    } else if(classNameArray.length > 1) { //class가 여러개
+      classNameArray.forEach(function (singleClassName, i) {
+        addSingleClass(element, singleClassName);
       });
     } else {
       addSingleClass(element, className);
@@ -43,7 +55,7 @@ function addClass(element, className) {
   
     function addSingleClass(el, className) {
       var oldClassName = el.getAttribute('class');
-      var oldClassNameArray = (oldClassName === null) ? oldClassName : oldClassName.split(' ');
+      var oldClassNameArray = (oldClassName === null) ? [oldClassName] : oldClassName.split(' ');
       var result = '';
       
       if (oldClassName === null || oldClassName === '') {

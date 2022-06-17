@@ -19,10 +19,10 @@ br.only-pc {content: '';}
 br.only-pc::after {content: '\00a0';}
 
 :root{
+  --color-light-yellow: rgba(255, 210, 117, 0.3);
   --color-light-pink: rgba(255, 200, 221, 0.3);
   --color-sky-blue: rgba(189, 224, 254, 0.3);
   --color-light-purple: rgba(205, 180, 219, 0.3);
-  
 }
 
 /* common */
@@ -69,7 +69,7 @@ body {font-family: 'SeoulHangang', 'Apple SD Gothic Neo', '맑은 고딕', Malgu
 #about-profile h2 {font-size: 30px; text-align: center; padding: 6% 0 4% 0;}
 #about-profile .content-box {position: relative; width: calc(100% - 40px); height: 70%; overflow: hidden; margin: 0 auto;}
 #about-profile div.photo {width: 100%; height: 100%;}
-#about-profile div.circle {width: 250px; height: 250px; border-radius: 50%; background-color: #666666; margin: 0 auto;}
+#about-profile div.circle {width: 250px; height: 250px; border-radius: 50%; background-color: var(--color-light-yellow); margin: 0 auto;}
 #about-profile div.profile {position: relative; width: 100%; height: 100%; text-align: center; margin-top: 10%;}
 #about-profile div.profile div.box {position: relative; display: inline-block; top: 10%;}
 #about-profile div.profile p {text-align: center;}
